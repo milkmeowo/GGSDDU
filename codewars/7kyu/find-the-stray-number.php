@@ -18,6 +18,7 @@ Details:
 
 function stray($arr)
 {
-    $answer = array_keys(array_count_values($arr),1);
-    return $answer[0];
+    //$answer = array_keys(array_count_values($arr),1);
+    //return $answer[0];
+    return array_search(1, array_count_values($arr));
 }
